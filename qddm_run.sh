@@ -24,7 +24,7 @@ python -V
 nvidia-smi || echo "No GPU detected."
 
 # --- Run program ---
-python main.py
+python main.py --device cuda
 
 # --- Done ---
 echo "Job complete at $(date)"
