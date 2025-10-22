@@ -20,7 +20,7 @@ HPC instructions:
 
 
 # 2. Create a virtual env:
-   - `load module anaconda`
+   - `module load anaconda`
    - `conda create -n qddm python=3.10 -y`
    - `conda activate qddm`
    - navigate to quantum-diffusion-main root
