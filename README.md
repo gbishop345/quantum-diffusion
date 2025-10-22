@@ -15,13 +15,17 @@ requiremnets_mac.txt is an altered version of requirements to run on mac (not su
 qddm_run.sh is a file to run the code on the HPC
 
 HPC instructions:
-1. upload code files to HPC:
+# 1. upload code files to HPC:
    - rsync -avh --progress "<file location on local computer>" \
 <slunet ID>2@login.libra.slu.edu:/home/<slunet ID>/...
 
-2. Create a virtual env:
+# 2. Create a virtual env:
    - load module anaconda
    - conda create -n qddm python=3.10 -y
    - conda activate qddm
    - cd to quantum-diffusion-main root
    - pip install -r requirements.txt
+
+# 4. run job:
+   - sbatch qddm_run.sh
+   - tail -f qddm_logs/slurm-<job#>.out (this will view the output file)
