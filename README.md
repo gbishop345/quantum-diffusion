@@ -1,6 +1,6 @@
 # Quantum Denoising Diffusion Models
 
-![1707404365914](image/README/1707404365914.png)
+
 
 
 
